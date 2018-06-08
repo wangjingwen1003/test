@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 需要导入c3p0驱动jar包和mysql驱动jar包 -->
+<!-- c3p0-config.xml配置文件放在src包下 -->
+<c3p0-config>
+    <named-config name="mysqlConnection">
+        <property name="user">szzl</property>
+        <property name="password">123456</property>
+        <property name="jdbcUrl">jdbc:mysql://192.168.0.201:3346/szzl</property>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="initialPoolSize">20</property>
+        <property name="maxPoolSize">40</property>
+        <property name="minPoolSize">20</property>
+        <property name="maxIdleTime">1800</property>
+        <property name="maxStatements">0</property>
+ 		<property name="idleConnectionTestPeriod">1800</property>
+    </named-config>
+</c3p0-config>
